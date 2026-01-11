@@ -17,11 +17,11 @@ Most analytics implementations fail not because of missing data, but because of 
 
 This project addresses common real-world tracking problems such as:
 
-- Missing context in events
-- Polluted analytics data
-- Null or incorrect values
-- Timing-related DOM issues
-- Overtracking of low-value user actions
+- Missing context in events  
+- Polluted analytics data  
+- Null or incorrect values  
+- Timing-related DOM issues  
+- Overtracking of low-value user actions  
 
 The goal is to design a tracking setup that sends **only meaningful, correct, and business-relevant events** to GA4.
 
@@ -37,10 +37,10 @@ Only submissions that include an `order_number` represent real customer complain
 
 Implemented features:
 
-- Conditional triggering logic
-- RegEx-based validation
-- Custom GA4 events
-- Noise filtering
+- Conditional triggering logic  
+- RegEx-based validation  
+- Custom GA4 events  
+- Noise filtering  
 
 This ensures that GA4 receives only **high-value form submissions**.
 
@@ -54,11 +54,11 @@ This made product-level analysis impossible.
 
 Implemented solutions:
 
-- Extracted product names directly from the DOM
-- Created DOM Element Variables
-- Debugged incorrect selectors
-- Solved timing issues caused by dynamic rendering
-- Attached product-level context as event parameters
+- Extracted product names directly from the DOM  
+- Created DOM Element Variables  
+- Debugged incorrect selectors  
+- Solved timing issues caused by dynamic rendering  
+- Attached product-level context as event parameters  
 
 ---
 
@@ -95,22 +95,42 @@ No  → Ignore
 
 ---
 
+## 📸 Implementation Proof (Screenshots)
+
+### 1. GTM Preview – Live Variable Inspection
+
+![GTM Preview](assets/images/screenshots/gtm-preview.png)
+
+---
+
+### 2. DOM Inspection – Product Name Extraction
+
+![DOM Selector](assets/images/screenshots/dom-selector.png)
+
+---
+
+### 3. GA4 DebugView – Enriched Event Validation
+
+![GA4 DebugView](assets/images/screenshots/ga4-debugview.png)
+
+---
+
 ## 🛠 Tools & Methods
 
 ### Tools
-- Google Tag Manager (GTM)
-- Google Analytics 4 (GA4)
-- Browser DevTools
+- Google Tag Manager (GTM)  
+- Google Analytics 4 (GA4)  
+- Browser DevTools  
 
 ### Techniques
-- Custom Event Triggers
-- DOM Element Variables
-- Data Layer Variables
-- RegEx-based validation
-- CSS Selector debugging
-- Event parameter enrichment
-- DOM timing handling
-- Real-time debugging with GA4 DebugView
+- Custom Event Triggers  
+- DOM Element Variables  
+- Data Layer Variables  
+- RegEx-based validation  
+- CSS Selector debugging  
+- Event parameter enrichment  
+- DOM timing handling  
+- Real-time debugging with GA4 DebugView  
 
 ---
 
@@ -118,22 +138,22 @@ No  → Ignore
 
 All implementations were validated using:
 
-- GTM Preview Mode
-- GA4 DebugView
-- Real-time event inspection
-- Cross-page navigation tests
-- Dynamic DOM loading scenarios
-- Null and edge-case handling
+- GTM Preview Mode  
+- GA4 DebugView  
+- Real-time event inspection  
+- Cross-page navigation tests  
+- Dynamic DOM loading scenarios  
+- Null and edge-case handling  
 
 ---
 
 ## 📈 Key Insights
 
-- The dataLayer is not always available — DOM-based tracking is often required
-- Incorrect selectors silently corrupt analytics data
-- Timing issues are one of the most common causes of null values
-- Event enrichment is critical for meaningful analysis
-- Filtering low-value events improves long-term data reliability
+- The dataLayer is not always available — DOM-based tracking is often required  
+- Incorrect selectors silently corrupt analytics data  
+- Timing issues are one of the most common causes of null values  
+- Event enrichment is critical for meaningful analysis  
+- Filtering low-value events improves long-term data reliability  
 
 ---
 
@@ -141,17 +161,17 @@ All implementations were validated using:
 
 Poor tracking design leads to:
 
-- Misleading dashboards
-- Wrong business decisions
-- Lost revenue
-- Broken trust in analytics
+- Misleading dashboards  
+- Wrong business decisions  
+- Lost revenue  
+- Broken trust in analytics  
 
 This project focuses on preventing these problems by building a tracking system that is:
 
-- Accurate
-- Scalable
-- Maintainable
-- Business-driven
+- Accurate  
+- Scalable  
+- Maintainable  
+- Business-driven  
 
 ---
 
@@ -164,15 +184,16 @@ This project focuses on preventing these problems by building a tracking system 
 
 ## 🔖 Tags
 
-`#GoogleTagManager`
-`#GA4`
-`#WebAnalytics`
-`#EventTracking`
-`#DOMTracking`
-`#DataQuality`
-`#Debugging`
-`#AnalyticsEngineering`
-`#MarketingAnalytics`
+`#GoogleTagManager`  
+`#GA4`  
+`#WebAnalytics`  
+`#EventTracking`  
+`#DOMTracking`  
+`#DataQuality`  
+`#Debugging`  
+`#AnalyticsEngineering`  
+`#MarketingAnalytics`  
 `#FrontEndTracking`
+
 
 
